@@ -2,32 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "acumin-pro-bold";
+  src: url("/fonts/ACUMIN PRO BOLD.OTF") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: "acumin-pro-book";
+  src: url("/fonts/ACUMIN PRO BOOK.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "acumin-pro-medium";
+  src: url("/fonts/ACUMIN PRO MEDIUM.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "monbaiti";
+  src: url("/fonts/MONBAITI.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("/fonts/Garamond-Regular.ttf") format("truetype");
+}
+
+.bouncing-img {
+  -webkit-animation: moveX 7s linear 0s infinite alternate,
+    moveY 3.4s linear 0s infinite alternate;
+  -moz-animation: moveX 7s linear 0s infinite alternate,
+    moveY 3.4s linear 0s infinite alternate;
+  -o-animation: moveX 7s linear 0s infinite alternate,
+    moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 7s linear 0s infinite alternate,
+    moveY 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 87.8dvw;
+  }
+}
+@-moz-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 87.8dvw;
+  }
+}
+@-o-keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 87.8dvw;
+  }
+}
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 87.8dvw;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@-webkit-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 66.7dvh;
+  }
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@-moz-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 66.7dvh;
+  }
+}
+@-o-keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 66.7dvh;
+  }
+}
+@keyframes moveY {
+  from {
+    top: 0;
+  }
+  to {
+    top: 66.7dvh;
   }
 }

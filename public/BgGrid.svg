@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="766" viewBox="0 0 1366 766">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="2" height="764" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Backgroud_Grid" data-name="Backgroud Grid" opacity="0.22">
+    <g id="Group_1" data-name="Group 1" transform="translate(3)">
+      <line id="Line_1" data-name="Line 1" y2="764.25" transform="translate(0.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-2" data-name="Line 1" y2="764.25" transform="translate(80.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-3" data-name="Line 1" y2="764.25" transform="translate(160.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-4" data-name="Line 1" y2="764.25" transform="translate(240.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-5" data-name="Line 1" y2="764.25" transform="translate(320.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-6" data-name="Line 1" y2="764.25" transform="translate(400.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-7" data-name="Line 1" y2="764.25" transform="translate(480.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-8" data-name="Line 1" y2="764.25" transform="translate(560.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-9" data-name="Line 1" y2="764.25" transform="translate(640.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-10" data-name="Line 1" y2="764.25" transform="translate(720.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-11" data-name="Line 1" y2="764.25" transform="translate(800.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-12" data-name="Line 1" y2="764.25" transform="translate(880.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-13" data-name="Line 1" y2="764.25" transform="translate(960.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-14" data-name="Line 1" y2="764.25" transform="translate(1040.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-15" data-name="Line 1" y2="764.25" transform="translate(1120.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-16" data-name="Line 1" y2="764.25" transform="translate(1200.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-17" data-name="Line 1" y2="764.25" transform="translate(1280.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-18" data-name="Line 1" y2="764.25" transform="translate(1360.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+        <g transform="translate(0.5)">
+          <line id="Line_3" data-name="Line 3" y2="768" fill="none" stroke="#fff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(0 768) rotate(-90)">
+      <line id="Line_1-19" data-name="Line 1" y2="1366" transform="translate(2.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-20" data-name="Line 1" y2="1366" transform="translate(82.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-21" data-name="Line 1" y2="1366" transform="translate(159.167)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-22" data-name="Line 1" y2="1366" transform="translate(238.75)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-23" data-name="Line 1" y2="1366" transform="translate(318.333)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-24" data-name="Line 1" y2="1366" transform="translate(397.917)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-25" data-name="Line 1" y2="1366" transform="translate(477.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-26" data-name="Line 1" y2="1366" transform="translate(557.083)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-27" data-name="Line 1" y2="1366" transform="translate(635.385)" fill="none" stroke="#fff" stroke-width="1"/>
+      <line id="Line_1-28" data-name="Line 1" y2="1366" transform="translate(715.385)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
