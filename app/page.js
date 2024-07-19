@@ -1,8 +1,8 @@
-'use client'
-import Hi from '@/public/Hi.jpeg'
+"use client";
+import Hi from "@/public/Hi.jpeg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import ThanksCat from '@/public/thanks-cat.gif'
+import ThanksCat from "@/public/thanks-cat.gif";
 
 export default function Home() {
   const [showProblemModal, setShowProblemModal] = useState(false);
@@ -125,7 +125,7 @@ export default function Home() {
       {showProblemModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg sm:w-[50%] w-[90%]  max-h-[95dvh] sm:min-h-[50%] overflow-y-hidden flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Problem" />
                 <div className="flex justify-between">
@@ -178,7 +178,7 @@ export default function Home() {
                 <select
                   name="division"
                   disabled={loading}
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
                   required
                 >
                   <option disabled>Select Division</option>
@@ -202,7 +202,7 @@ export default function Home() {
                 <select
                   name="type"
                   disabled={loading}
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
                   required
                 >
                   <option disabled>Select Type</option>
@@ -226,7 +226,6 @@ export default function Home() {
                 <div className="flex justify-end space-x-2 pt-6">
                   <button
                     type="button"
-                    
                     onClick={() => setShowProblemModal(false)}
                     className="bg-gray-500 hover:bg-slate-800 transition-all duration-300 text-white px-4 py-2 rounded"
                   >
@@ -251,7 +250,7 @@ export default function Home() {
       {showRequestModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-hidden flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Request" />
                 <div className="flex justify-between">
@@ -305,7 +304,7 @@ export default function Home() {
                 <select
                   name="division"
                   disabled={loading}
-                  className="m-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
                   required
                 >
                   <option disabled>Select Division</option>
@@ -329,7 +328,8 @@ export default function Home() {
                 <select
                   name="type"
                   disabled={loading}
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
+
                   required
                 >
                   <option disabled>Select type</option>
@@ -344,7 +344,8 @@ export default function Home() {
                 <select
                   name="approval"
                   disabled={loading}
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
+
                   required
                 >
                   <option disabled>Select approval</option>
@@ -392,7 +393,7 @@ export default function Home() {
       {showSuggestionModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%]  max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-hidden flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Suggestion" />
                 <div className="flex justify-between">
@@ -446,7 +447,8 @@ export default function Home() {
                 <select
                   name="division"
                   disabled={loading}
-                  className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+                  className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
+
                   required
                 >
                   <option disabled>Select Division</option>
