@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="min-h-dvh overflow-hidden bg-[#2246ED] relative flex flex-col md:justify-center md:items-center bg-cover bg-no-repeat"
+        className="h-dvh overflow-hidden bg-[#2246ED] relative flex flex-col md:justify-center md:items-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url('/BgGrid.svg')` }}
       >
         <Image
@@ -88,7 +88,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="z-[3] flex flex-col lg:flex-row md:justify-center  gap-4 lg:gap-10 w-full">
+          <div className="z-[2] flex flex-col lg:flex-row md:justify-center px-8 gap-4 lg:gap-10 w-full">
             <button
               onClick={() => setShowProblemModal(true)}
               className="group hover:bg-gradient-to-r from-green-500 via-green-400 to-lime-300 transition-all duration-300 px-8 py-4 hover:border-transparent flex gap-4 border rounded-full border-white justify-center items-center"
@@ -114,7 +114,7 @@ export default function Home() {
               </h1>
             </button>
           </div>
-          <div className="footer absolute bottom-[20px]">
+          <div className="z-[2] footer absolute bottom-[20px]">
             <p className="text-white">
               ©{currentYear} | Cretech - Everything Fixed!
             </p>
@@ -125,17 +125,17 @@ export default function Home() {
       {showProblemModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg sm:w-[50%] w-[90%] min-h-[90%] sm:min-h-[50%] flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg sm:w-[50%] w-[90%]  max-h-[95dvh] sm:min-h-[50%] overflow-y-hidden flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Problem" />
                 <div className="flex justify-between">
-                  <h2 className="text-3xl mb-4">Apa problem lo?</h2>
+                  <h2 className="text-2xl sm:text-3xl mb-4">Apa problem lo?</h2>
                   <h1
                     onClick={() => setShowProblemModal(false)}
                     className="group cursor-pointer "
                   >
                     <svg
-                      className="w-8 h-8 text-gray-400 group-hover:text-gray-600"
+                      className="w-7 h-7 sm:w-8 sm:h-8 text-gray-400 group-hover:text-gray-600"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -154,7 +154,7 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="p-4 bg-gradient-to-r from-green-500 via-green-400 to-lime-300 rounded-xl w-full ">
-                  <h1 className="  text-xl text-black">
+                  <h1 className=" text-sm sm:text-xl text-black">
                     Hardware: Kerusakan laptop, laptop lemot, etc <br />{" "}
                     Software: Install ulang, software, icloud & perpassword an
                     duniawi, etc
@@ -251,17 +251,17 @@ export default function Home() {
       {showRequestModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] min-h-[90%] lg:w-[50%] lg:min-h-[50%] flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-hidden flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Request" />
                 <div className="flex justify-between">
-                  <h2 className="text-3xl mb-4">Apa request lo?</h2>
+                  <h2 className="text-2xl sm:text-3xl mb-4">Apa request lo?</h2>
                   <h1
                     onClick={() => setShowRequestModal(false)}
                     className="group cursor-pointer "
                   >
                     <svg
-                      className="w-8 h-8 text-gray-400 group-hover:text-gray-600"
+                      className="w-7 h-7 sm:w-8 sm:h-8  text-gray-400 group-hover:text-gray-600"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -280,7 +280,7 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="p-4 bg-gradient-to-r from-green-500 via-green-400 to-lime-300 rounded-xl w-full ">
-                  <h1 className="  text-xl text-black">
+                  <h1 className=" text-sm sm:text-xl text-black">
                     Hardware: Pembelian sparepart PC / Laptop untuk operasional
                     Kantor, etc <br />
                     Software: Pembelian domain, icloud, subscribtion, email, etc
@@ -392,11 +392,11 @@ export default function Home() {
       {showSuggestionModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] min-h-[90%] lg:w-[50%] lg:min-h-[50%]  flex flex-col">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%]  max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-hidden flex flex-col">
               <form name="Kelah-Keluh-v1">
                 <input type="hidden" name="category" value="Suggestion" />
                 <div className="flex justify-between">
-                  <h2 className="text-3xl mb-4">
+                  <h2 className="text-2xl sm:text-3xl mb-4">
                     Lu punya ide atau masukkan apa nih buat kita?
                   </h2>
                   <h1
@@ -404,7 +404,7 @@ export default function Home() {
                     className="group cursor-pointer "
                   >
                     <svg
-                      className="w-8 h-8 text-gray-400 group-hover:text-gray-600"
+                      className="sm:w-8 sm:h-8 w-7 h-7 text-gray-400 group-hover:text-gray-600"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -423,7 +423,7 @@ export default function Home() {
                   </h1>
                 </div>
                 <div className="p-4 bg-gradient-to-r from-green-500 via-green-400 to-lime-300 rounded-xl w-full ">
-                  <h1 className="  text-xl text-black">
+                  <h1 className=" text-sm sm:text-xl text-black">
                     Ide apapun yang bisa ngebantu/ mempermudah perkerjaan kalian
                     yang bisa kita develop. Jika possible, project akan
                     dimasukan ke basecamp, dan di develop.
