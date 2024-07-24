@@ -11,12 +11,13 @@ export default function Home() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   const [loading, setLoading] = useState(false);
+  const [getIdTicket, setIdTicket] = useState("");
 
   useEffect(() => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyBfYCycvlm0y96PQRm-AYeyLGZ9BIvNrCK8adwaaGr4k2uDdXfCiTl6ToU1cgkIY1kCg/exec";
+      "https://script.google.com/macros/s/AKfycbwfbgvYTiHcQ4JJRowGCgenxfQ7InNGUhefPUCvSiNwygMyqIl5qwMgSW5xDdplQxBd6g/exec";
 
-    const form = document.forms["Kelah-Keluh-v1"];
+    const form = document.forms["Kelah-Keluh"];
 
     if (form) {
       const handleSubmit = (e) => {
@@ -53,6 +54,9 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentYear(new Date().getFullYear());
     }, 1000);
+
+    const uuid = crypto.randomUUID().substring(0, 6)
+    setIdTicket(uuid);
 
     return () => {
       clearInterval(interval);
@@ -126,8 +130,9 @@ export default function Home() {
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
             <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
-              <form name="Kelah-Keluh-v1">
+              <form name="Kelah-Keluh">
                 <input type="hidden" name="category" value="Problem" />
+                <input type="hidden" name="id_ticket" value={getIdTicket} />
                 <div className="flex justify-between">
                   <h2 className="text-2xl sm:text-3xl mb-4">Apa problem lo?</h2>
                   <h1
@@ -251,8 +256,9 @@ export default function Home() {
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
             <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
-              <form name="Kelah-Keluh-v1">
+              <form name="Kelah-Keluh">
                 <input type="hidden" name="category" value="Request" />
+                <input type="hidden" name="id_ticket" value={getIdTicket} />
                 <div className="flex justify-between">
                   <h2 className="text-2xl sm:text-3xl mb-4">Apa request lo?</h2>
                   <h1
@@ -329,12 +335,13 @@ export default function Home() {
                   name="type"
                   disabled={loading}
                   className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
-
                   required
                 >
                   <option disabled>Select type</option>
                   <option value="Hardware">Hardware</option>
                   <option value="Software">Software</option>
+                  <option value="Data">Data</option>
+
                 </select>
 
                 <label className="block text-md mt-4 text-black">
@@ -345,12 +352,13 @@ export default function Home() {
                   name="approval"
                   disabled={loading}
                   className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
-
                   required
                 >
                   <option disabled>Select approval</option>
-                  <option value="Hardware">Head</option>
-                  <option value="Software">Bob</option>
+                  <option value="Head">Head</option>
+                  <option value="Bob">Bob</option>
+                  <option value="None">None</option>
+
                 </select>
 
                 <label className="block text-md mt-4 text-black">
@@ -393,9 +401,10 @@ export default function Home() {
       {showSuggestionModal && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 ">
-            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto flex flex-col">
-              <form name="Kelah-Keluh-v1">
+            <div className=" bg-white p-6 gap-2 rounded-lg shadow-lg w-[90%] max-h-[95dvh] sm:w-[50%] sm:min-h-[50%] overflow-y-auto  flex flex-col">
+              <form name="Kelah-Keluh">
                 <input type="hidden" name="category" value="Suggestion" />
+                <input type="hidden" name="id_ticket" value={getIdTicket} />
                 <div className="flex justify-between">
                   <h2 className="text-2xl sm:text-3xl mb-4">
                     Lu punya ide atau masukkan apa nih buat kita?
@@ -448,7 +457,6 @@ export default function Home() {
                   name="division"
                   disabled={loading}
                   className="mt-1 px-1 py-[9px] border border-gray-300 rounded-md w-full"
-
                   required
                 >
                   <option disabled>Select Division</option>
